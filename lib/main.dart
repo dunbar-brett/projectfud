@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Project Füd',
       theme: new ThemeData(
         // This is the theme of your application.
         //
@@ -22,13 +22,14 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      //splash screen before this
+      home: new Recipes(title: 'Recipes'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class Recipes extends StatefulWidget {
+  Recipes({Key key, this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful,
   // meaning that it has a State object (defined below) that contains
@@ -42,10 +43,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  RecipePageState createState() => new RecipePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class RecipePageState extends State<Recipes> {
   int _counter = 0;
 
   void _incrementCounter() {
