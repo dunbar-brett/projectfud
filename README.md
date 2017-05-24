@@ -7,6 +7,8 @@ A new flutter project.
 For help getting started with Flutter, view our online
 [documentation](http://flutter.io/).
 
+Flutter Gallery App: https://github.com/flutter/flutter/tree/master/examples/flutter_gallery
+
 
 Main Screens
 	Recipe List
